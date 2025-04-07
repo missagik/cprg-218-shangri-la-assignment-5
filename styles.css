@@ -3,12 +3,21 @@
     margin: 0;
     padding: 0;
 }
+
+header {
+    background-image: linear-gradient(lightblue, lightyellow)
+    
+}
 header img {
     max-width: 25%;
 }
 
-header {
-    background-color: beige;
+header .top-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
 }
 
 nav {
@@ -21,6 +30,11 @@ li {
     list-style-type: none;
     display: inline;
     margin-right: 1.5rem;
+}
+
+nav li a {
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 main {
