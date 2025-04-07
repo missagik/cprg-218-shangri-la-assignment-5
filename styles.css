@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header img {
+    max-width: 25%;
+}
+
+header {
+    background-color: beige;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main section#offering-info {
+    border: solid 1px black;
+    text-align: center;
+    grid-column: span 3;
+}
