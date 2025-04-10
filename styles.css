@@ -26,11 +26,11 @@ nav {
     display: flex;
 }
 
-li {
+/*li {
     list-style-type: none;
     display: inline;
     margin-right: 1.5rem;
-}
+}*/
 
 nav li a {
     color: whitesmoke;
