@@ -4,46 +4,50 @@
     padding: 0;
 }
 
-header {
-    background-image: linear-gradient(lightblue, lightyellow)
-    
-}
-header img {
-    max-width: 25%;
+#hero-home {
+    background-image: url(./files/hero-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: white;
 }
 
-header .top-nav {
-    position: relative;
+#hero-act {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: white;
+}
+
+.top-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.logo {
+    max-width: 25%;
+    max-height: auto;
+}
+
+.menu ul {
+    list-style: none;
     padding: 0 1rem;
 }
 
-nav {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-/*li {
-    list-style-type: none;
+li {
     display: inline;
     margin-right: 1.5rem;
-}*/
+}
 
 nav li a {
     color: whitesmoke;
     text-decoration: none;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-main section#offering-info {
-    border: solid 1px black;
-    text-align: center;
-    grid-column: span 3;
+h2 {
+    margin: 1rem 0;
 }
