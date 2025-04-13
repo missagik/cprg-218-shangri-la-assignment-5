@@ -24,7 +24,7 @@
                 </nav>
             </section>
             <h1>Shangri La Beach Resort</h1>
-            <h2>Your Dream Getaway</h2>
+            <p>Your Dream Getaway</p>
             <img src="" alt="" id="icon">
             <p id="weather"></p>
 
@@ -34,7 +34,7 @@
     </header>
 
     <main>
-        <section id="offering-info">
+        <section id="home-info">
             <h3>Experience Unforgettable Moments</h3>
             <h4>Private Beach Access</h4>
             <p>Step onto our pristine, white-sand beach.</p>
@@ -49,25 +49,43 @@
             <p>Savor culinary delights at our restaurants.</p>
         </section>
 
-        <section>
-            <h3>Our Luxurious Accommodations</h3>
-            <h4>Ocean View Deluxe Room</h4>
-            <p>Enjoy stunning ocean views from your private balcony.</p>
-            <a href="./amenities.html" class="button">[View Details]</a>
-        </section>
+        <h3 id="room-title">Our Luxurious Accommodations</h3>
+        <div id="rooms-grid">
+            <section class="home-rooms" id="room-image-1">
+                <h4>Ocean View Deluxe Room</h4>
+                <p>Enjoy stunning ocean views from your private balcony.</p>
+                <a href="./accomodations.html" class="button">[View Details]</a>
+            </section>
 
-        <section>
-            <h4>Beachfront Suite</h4>
-            <p>Step directly onto the sand from your spacious suite.</p>
-            <a href="./amenities.html" class="button">[View Details]</a>
-        </section>
+            <section class="home-rooms" id="room-image-2">
+                <h4>Beachfront Suite</h4>
+                <p>Step directly onto the sand from your spacious suite.</p>
+                <a href="./accomodations.html" class="button">[View Details]</a>
+            </section>
 
-        <section>
-            <h4>Garden View Family Room</h4>
-            <p>Perfect for families, with ample space and garden views.</p>
-            <a href="./amenities.html" class="button">[View Details]</a>
-        </section>
+            <section class="home-rooms" id="room-image-3">
+                <h4>Garden View Family Room</h4>
+                <p>Perfect for families, with ample space and garden views.</p>
+                <a href="./accomodations.html" class="button">[View Details]</a>
+            </section>
+        </div>
     </main>
+
+    <footer>
+        <h3>What Our Guests Are Saying</h3>
+        <section class="quote-sections">
+            <p>"Our stay at Shangri La was absolutely perfect! The service was impeccable, and the views were breathtaking."</p>
+            <p>- Sarah M.</p>
+        </section>
+
+        <section class="quote-sections">
+            <p>"The beachfront suite was amazing! Waking up to the sound of the waves and stepping right onto the sand was incredible."</p>
+            <p>- John B.</p>
+            <a href="./testimonials.html" class="button">[Read More Testimonials]</a>
+        </section>
+
+        <small>&copy; 2025 Shangri La Beach Resort. All Rights Reserved.</small>
+    </footer>
 
     <script src="./weather.js"></script>
 
