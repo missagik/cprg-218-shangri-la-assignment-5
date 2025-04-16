@@ -4,45 +4,28 @@
     padding: 0;
 }
 
-#hero-home {
+#hero {
     background-image: url(./files/hero-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
-    color: white;
-}
-
-#hero-act {
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
+    height: 40rem;
     color: white;
 }
 
 #hero-acc {
-    background-image: url();
+    background-image: url(./files/acc-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 40rem;
     color: white;
 }
 
-#hero-amen {
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    color: white;
-}
 
 .top-nav {
     position: sticky;
-    top: 0;
+    top: 0; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,12 +37,22 @@
     max-height: auto;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0 1rem;
+button {
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 200%;
+    cursor: pointer;
+    display: none;
 }
 
-li {
+button:focus {
+    color: #333;
+    border: 1px solid #333;
+}
+
+#menu ul li {
+    list-style: none;
     display: inline;
     margin-right: 1.5rem;
 }
@@ -104,8 +97,8 @@ h2 {
     background-color: rgb(255, 172, 139);
     border-radius: 10px;
     padding: 6.5rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px;
+    transition: transform 0.3s;
 }
   
 .home-rooms:hover {
@@ -113,21 +106,21 @@ h2 {
 }
 
 #room-image-1 {
-    background-image: url(./files/ocean.jpg);
+    background-image: url(./files/ocean.webp);
     background-size: 90% 90%;
     background-repeat: no-repeat;
     background-position: center; 
 }
 
 #room-image-2 {
-    background-image: url(./files/beach.jpg);
+    background-image: url(./files/beach.webp);
     background-size: 90% 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #room-image-3 {
-    background-image: url(./files/garden.jpg);
+    background-image: url(./files/garden.webp);
     background-size: 90% 90%;
     background-repeat: no-repeat;
     background-position: center;
@@ -170,7 +163,7 @@ h2 {
 }
 
 #testimonial-title {
-    font-size: 120%;
+    font-size: 1.2rem;
     padding: 2rem;
     background-image: linear-gradient(white, rgb(255,172,139));
     text-align: center;
@@ -178,11 +171,63 @@ h2 {
 }
 
 #testimonial-bottom {
-    font-size: 110%;
+    font-size: 1.1rem;
     padding: 2rem;
     background-image: linear-gradient(to top, white, rgb(255,172,139));
     text-align: center;
     margin-bottom: 1rem;
+}
+
+#act-title {
+    text-align: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-style {
+    background-color: rgb(255, 172, 139);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 0 60px 0 60px;
+    word-spacing: 0.2rem;
+    line-height: 2rem;
+}
+
+#act-booking-info {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    background-image: linear-gradient(to right, white, rgb(255,172,139), white);
+}
+
+#accommodations-title  {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+#accommodations-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem;
+}
+
+.accomodation-photos {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    background-color: rgb(255, 172, 139);
+    padding: 0.8rem;
+}
+
+.accomodations-styling {
+    list-style-position: inside;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgb(255, 172, 139);
 }
 
 footer {
@@ -196,3 +241,110 @@ footer h3 {
     font-size: 1.75rem;
 }
 
+@media screen and (max-width:640px){
+    #hero {
+        height: 24rem;
+    }
+
+    button{
+        display: block;
+    }
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: rgb(255, 172, 139);
+        flex-direction: column;
+        display: none;
+    }
+    nav.active{
+        display: block;
+    }
+    nav li {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+    nav li a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .logo {
+        max-width: 40%;
+    }
+
+    #home-info {
+        font-size: 0.9rem;
+    }
+
+    .home-rooms {
+        padding: 4rem;
+    }
+
+    #act-booking-info {
+        font-size: 0.9rem;
+        padding: 1rem;
+        list-style-position: inside;
+    }
+
+    #quote-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #testimonial-title{
+        font-size: 1rem;
+    }
+
+    #testimonial-bottom {
+        font-size: 0.9rem;
+    }
+
+    #accommodations-title {
+        font-size: 0.8rem;
+    }
+
+    #accommodations-section {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .accomodation-photos {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:900px){
+    #accommodations-title {
+        font-size: 1rem;
+    }
+
+    #accommodations-section {
+        display: flex;
+        flex-direction: column;
+        margin: 4rem;
+    }
+
+    .accomodation-photos {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width:2000px){
+    body {
+        font-size: 200%;
+    }
+
+    #quote-grid {
+        grid-template-columns: repeat(5, 1fr);
+        padding: 20rem 0;
+    }
+
+    #quote-grid-1 {
+        grid-column: span 1;
+    }
+}

@@ -11,3 +11,11 @@ fetch ('https://api.openweathermap.org/data/2.5/weather?q=Cancun&appid=54a69c0bb
     icon.src = weathericon;
     icon.alt = data.weather[0].description;
 });
+
+const navToggle = document.getElementById('nav-toggle');
+const menuList = document.getElementById('menu');
+
+navToggle.addEventListener('click', function(){
+menuList.classList.toggle('active');
+    
+});

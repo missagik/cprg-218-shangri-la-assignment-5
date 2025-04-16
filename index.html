@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Shangri La Beach Resort</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./files/favicon.png">
 </head>
 <body>
     <header>
-        <section id="hero-home">
+        <section id="hero">
             <section class="top-nav">
                 <img src="./files/logo.svg" alt="Hibiscus flower" class="logo">
+                
+                <button id="nav-toggle">&#9776;</button>
 
-                <nav class="menu">
+                <nav id="menu">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./activities.html">Activities</a></li>
@@ -25,7 +27,7 @@
             </section>
             <h1>Shangri La Beach Resort</h1>
             <p>Your Dream Getaway</p>
-            <img src="" alt="" id="icon">
+            <img src="" alt="weather icon that corresponds with the current weather" id="icon">
             <p id="weather"></p>
 
             <h2>Escape to Paradise</h2>
@@ -54,19 +56,19 @@
             <section class="home-rooms" id="room-image-1">
                 <h4>Ocean View Deluxe Room</h4>
                 <p>Enjoy stunning ocean views from your private balcony.</p>
-                <a href="./accomodations.html" class="button">[View Details]</a>
+                <a href="./accomodations.html#ocean-room" class="button">[View Details]</a>
             </section>
 
             <section class="home-rooms" id="room-image-2">
                 <h4>Beachfront Suite</h4>
                 <p>Step directly onto the sand from your spacious suite.</p>
-                <a href="./accomodations.html" class="button">[View Details]</a>
+                <a href="./accomodations.html#beach-room" class="button">[View Details]</a>
             </section>
 
             <section class="home-rooms" id="room-image-3">
                 <h4>Garden View Family Room</h4>
                 <p>Perfect for families, with ample space and garden views.</p>
-                <a href="./accomodations.html" class="button">[View Details]</a>
+                <a href="./accomodations.html#garden-room" class="button">[View Details]</a>
             </section>
         </div>
     </main>
@@ -87,7 +89,7 @@
         <small>&copy; 2025 Shangri La Beach Resort. All Rights Reserved.</small>
     </footer>
 
-    <script src="./weather.js"></script>
+    <script src="./main.js"></script>
 
 </body>
 </html>
